@@ -11,9 +11,7 @@ from pydantic import BaseModel, Field
 
 class AssessmentRequest(BaseModel):
     """
-    Input payload for the risk assessment.
-
-    This closely mirrors your questionnaire structure.
+    Input payload for the risk assessment
     """
 
     # Company context
