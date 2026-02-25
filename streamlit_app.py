@@ -29,7 +29,6 @@ st.set_page_config(
 
 
 def inject_css():
-    """Stile custom per dare un look più 'prodotto'."""
     st.markdown(
         """
         <style>
@@ -298,7 +297,7 @@ elif page == "📝 Nuova valutazione":
         "Il tool restituisce un punteggio e un report sintetico."
     )
 
-    # Tabs per non spaventare l'utente
+    # Tabs 
     tab1, tab2, tab3, tab4, tab5 = st.tabs(
         [
             "🏢 Profilo azienda",
@@ -754,7 +753,7 @@ elif page == "📝 Nuova valutazione":
             "reg_issue_impact": reg_issue_impact,
             "ai_training_done": ai_training_done,
             "ai_act_plan_status": ai_act_plan_status,
-            # PIM-specific (chiavi usate dal motore di scoring)
+            # PMI-specific (chiavi usate dal motore di scoring)
             "pmi_ai_features": pmi_ai_features,
             "pmi_ai_transparency": pmi_ai_transparency,
             "pmi_ai_impact": pmi_ai_impact,
