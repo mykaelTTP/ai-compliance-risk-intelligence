@@ -57,8 +57,8 @@ def classify_risk(score: float) -> str:
 def _compute_ai_risk_base(answers: Dict[str, Any], reasons: List[str]) -> float:
     score = 0.0
 
-    # In questo tool assumiamo che ci sia sempre AI (PIM+AI),
-    # ma teniamo comunque la logica generica per altri casi d'uso futuri.
+    # In questo tool assumo che ci sia sempre AI (PIM+AI),
+    # ma tengo comunque la logica generica per altri casi d'uso futuri.
     if answers.get("uses_ai") == "yes":
         score += 20
         reasons.append("L'azienda utilizza sistemi di AI o automazione sui dati.")
@@ -102,7 +102,7 @@ def _compute_ai_risk_pim(answers: Dict[str, Any], reasons: List[str]) -> float:
     if not pim_features:
         return 0.0
 
-    # Presenza di AI nel PIM
+    # Presenza di AI nel PMI
     score += 5
 
     if "dynamic_pricing" in pim_features or "categorization" in pim_features:
@@ -376,7 +376,7 @@ def _build_report(
     urgency_risk: float,
     reasons: List[str],
 ) -> str:
-    """Crea un report testuale in italiano, leggibile dal management."""
+    """Crea un report testuale"""
 
     lines: List[str] = []
 
