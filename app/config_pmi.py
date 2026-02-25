@@ -1,8 +1,8 @@
 # app/config_pmi.py
 
 """
-Configurazione specifica per la sezione PIM (Product Information Management) + AI.
-Contiene mapping codice -> label in italiano per le opzioni usate nella UI.
+Configurazione specifica per la sezione PMI (Piccole e Medie Imprese) + AI.
+Contiene mapping codice -> label in italiano
 """
 
 PMI_AI_FEATURES = {
